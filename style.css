@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body{
+    height: 100%;
+    background-color: black;
+}
+.slider{
+    height: 100%;
+}
+.slider-layer{
+    position: absolute;
+    inset: 0;
+    background-size: cover ;
+    will-change: transform;
+    background-position: center;
+}
+.slider-layer::before{
+    content: '';
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    box-shadow: inset 0 0 250px;
+}
+.slider-item{
+    overflow: hidden;
+}
+.slider-wrapper{
+    will-change: transform;
+}
